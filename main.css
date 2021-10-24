@@ -1,11 +1,23 @@
+.icons a div {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  padding: 4px;
+  /* margin: 4px; */
+}
+
+.icons a {
+  text-decoration: none;
+}
+
 /* .card {
   width: 100%;
   max-width: 400px;
 } */
 
 section {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 p {

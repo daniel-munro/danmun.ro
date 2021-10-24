@@ -28,9 +28,10 @@
 					<div class="sticky-top">
 						<ul class="nav nav-pills nav-stacked flex-column">
 							<li class="nav-item text-center">
-								<img id="photo" class="img-fluid rounded-circle" src="/img/Daniel_Munro.jpg" style="max-width: 200px;">
+								<img id="photo" class="img-fluid rounded-circle mt-2" src="/img/Daniel_Munro.jpg" style="max-width: 200px;">
 								<h1>Daniel Munro</h1>
-								<p>dmunro@scripps.edu</p>
+								<!-- <p>dmunro@scripps.edu</p> -->
+								<h5>Computational Biologist</p>
 							</li>
 							<li class="nav-item d-none d-md-block">
 								<a class="nav-link" href="#about">About</a>
@@ -42,12 +43,38 @@
 								<a class="nav-link" href="#publications">Publications</a>
 							</li>
 							<li class="nav-item d-none d-md-block">
+								<a class="nav-link" href="#talks">Talks</a>
+							</li>
+							<li class="nav-item d-none d-md-block">
+								<a class="nav-link" href="#writing">Writing</a>
+							</li>
+							<li class="nav-item d-none d-md-block">
 								<a class="nav-link" href="#etc">Etc.</a>
 							</li>
-							<li class="nav-item text-center p-3">
-								<a href="https://github.com/daniel-munro"><svg width="32" height="32" viewbox="0 0 20 20"><use xlink:href="/img/minima-social-icons.svg#github"></use></svg></a>
+							<li class="icons nav-item text-center p-3">
+								<a href="mailto:dmunro@scripps.edu">
+									<div>
+										<svg rule="img" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><title>Email</title><path d="M256.000,512.000 C114.615,512.000 0.000,397.385 0.000,256.000 C0.000,114.615 114.615,0.000 256.000,0.000 C397.385,0.000 512.000,114.615 512.000,256.000 C512.000,397.385 397.385,512.000 256.000,512.000 ZM108.159,344.493 L191.319,265.831 L108.159,197.002 L108.159,344.493 ZM403.839,147.838 L108.159,147.838 L108.159,177.337 L255.999,305.162 L403.839,177.337 L403.839,147.838 ZM403.839,197.002 L320.679,265.831 L403.839,344.493 L403.839,197.002 ZM311.439,275.663 L255.999,324.827 L200.559,275.663 L108.159,364.158 L403.839,364.158 L311.439,275.663 Z"/></svg>
+									</div>
+								</a>
+								<!-- From https://simpleicons.org/ -->
+								<a href="https://www.linkedin.com/in/daniel-b-munro/">
+									<div>
+										<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>LinkedIn</title><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+									</div>
+								</a>
+								<a href="https://scholar.google.com/citations?user=BkRb2A0AAAAJ&hl=en">
+									<div>
+										<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Google Scholar</title><path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/></svg>
+									</div>
+								</a>
+								<!-- <a href="https://github.com/daniel-munro"><svg width="32" height="32" viewbox="0 0 20 20"><use xlink:href="/img/minima-social-icons.svg#github"></use></svg></a> -->
+								<a href="https://github.com/daniel-munro">
+									<div>
+										<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+									</div>
+								</a>
 								<!-- <a href="https://twitter.com/danbmunro"><svg width="32" height="32" viewbox="0 0 20 20"><use xlink:href="/img/minima-social-icons.svg#twitter"></use></svg></a> -->
-								<a href="https://www.linkedin.com/in/daniel-b-munro/"><svg width="32" height="32" viewbox="0 0 20 20"><use xlink:href="/img/minima-social-icons.svg#linkedin"></use></svg></a>
 							</li>
 						</ul>
 					</div>
@@ -65,7 +92,10 @@
 					</section>
 
 					<section id="cv">
-						<a href="/Daniel_Munro_CV.pdf"><h4>Curriculum Vitae</h4></a>
+						<!-- <a href="/Daniel_Munro_CV.pdf"><h4>Curriculum Vitae</h4></a> -->
+						<a href="/Daniel_Munro_CV.pdf">
+							<button type="button" class="btn btn-primary btn-lg">Curriculum Vitae</button>
+						</a>
 					</section>
 					
 					<section id="publications">
@@ -123,6 +153,7 @@
 							<div class="col-sm-9">
 								<h6>Two critical positions in zinc finger domains are heavily mutated in three human cancer types</h6>
 								<h6 class="text-muted fw-normal">Munro et al. <i>PLOS Computational Biology</i> 2018</h6>
+								<a href="https://www.princeton.edu/news/2018/08/08/sea-mutations-two-possible-cancer-links-rise-surface">News article</a>
 							</div>
 						</div>
 						
@@ -306,9 +337,43 @@
 
 					</section>
 
+					<section id="talks">
+
+						<h2>Talks</h2>
+
+						<div class="row mb-4">
+							<div class="col-sm-3">
+								<a href="https://www.youtube.com/watch?v=DbKM82gL60Y&list=PLyt8aksOTXY_C27JCWE29neFXYFUpGdBc&index=2">
+									<img class="img-fluid img-thumbnail" src="img/CTC-RG2021.png">
+								</a>
+							</div>
+							<div class="col-sm-9">
+								<h6>Identification of regulatory landscape in multiple brain regions of outbred heterogeneous stock rats</h6>
+								<h6 class="text-muted fw-normal">Complex Trait Consortium-Rat Genomics 2021 meeting</h6>
+							</div>
+						</div>
+
+					</section>
+
+					<section id="writing">
+
+						<h2>Writing</h2>
+
+						<div class="row mb-3">
+							<h6><a href="https://www.metaculus.com/notebooks/8289/lifespan-extension-in-dogs-and-longevity-research-signals/">Lifespan Extension in Dogs and Longevity Research Signals</a></h6>
+							<h6 class="text-muted fw-normal">Metaculus, 2021</h6>
+						</div>
+
+						<div class="row mb-3">
+							<h6><a href="http://coopersquarereview.org/post/the-neverending-interview/">The Neverending Interview</a></h6>
+							<h6 class="text-muted fw-normal">The Cooper Square Review, 2019</h6>
+						</div>
+
+					</section>
+
 					<section id="etc">
 
-						<h1>Et cetera</h1>
+						<h2>Et cetera</h2>
 
 						<div class="row mb-4">
 							<div class="col-sm-3">
