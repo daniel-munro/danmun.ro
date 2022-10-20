@@ -6,7 +6,7 @@
   /* margin: 4px; */
 }
 
-.icons a {
+.icons a, h6 a, h5 a {
   text-decoration: none;
 }
 
