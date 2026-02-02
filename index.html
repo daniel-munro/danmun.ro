@@ -1,530 +1,984 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Daniel Munro</title>
-		<meta name="twitter:card" content="summary">
-		<meta name="twitter:site" content="@danbmunro">
-		<meta name="twitter:title" content="Daniel Munro">
-		<meta property="og:title" content="Daniel Munro">
-		<meta name="twitter:url" content="https://danmun.ro/">
-		<meta property="og:url" content="https://danmun.ro/">
-		<meta name="description" content="Computational biologist at UC San Diego and Seattle Children's Research Institute.">
-		<meta name="twitter:description" content="Computational biologist at UC San Diego and Seattle Children's Research Institute.">
-		<meta property="og:description" content="Computational biologist at UC San Diego and Seattle Children's Research Institute.">
-		<meta name="twitter:image:src" content="https://danmun.ro/img/Daniel_Munro.jpg">
-		<meta property="og:image" content="https://danmun.ro/img/Daniel_Munro.jpg">
-		<meta property="og:type" content="website">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-		<link rel="stylesheet" href="/main.css">
-	</head>
- 
-	<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="20">
-		<div class="container-fluid" style="max-width: 1200px;">
-			<div class="row">
-				<nav id="navbar" class="col-md-3">
-					<div class="sticky-top">
-						<ul class="nav nav-pills nav-stacked flex-column">
-							<li class="nav-item text-center">
-								<img id="photo" class="img-fluid rounded-circle mt-2" src="/img/Daniel_Munro.jpg" style="max-width: 200px;">
-								<h1>Daniel Munro</h1>
-								<h5>Computational Biologist</p>
-							</li>
-							<li class="nav-item d-none d-md-block">
-								<a class="nav-link" href="#about">About</a>
-							</li>
-							<li class="nav-item d-none d-md-block">
-								<a class="nav-link" href="#cv">CV</a>
-							</li>
-							<li class="nav-item d-none d-md-block">
-								<a class="nav-link" href="#publications">Publications</a>
-							</li>
-							<li class="nav-item d-none d-md-block">
-								<a class="nav-link" href="#talks">Talks</a>
-							</li>
-							<li class="nav-item d-none d-md-block">
-								<a class="nav-link" href="#writing">Writing</a>
-							</li>
-							<li class="nav-item d-none d-md-block">
-								<a class="nav-link" href="#etc">Etc.</a>
-							</li>
-							<li class="icons nav-item text-center p-3">
-								<a href="mailto:dmunro@health.ucsd.edu">
-									<div>
-										<svg rule="img" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><title>Email</title><path d="M256.000,512.000 C114.615,512.000 0.000,397.385 0.000,256.000 C0.000,114.615 114.615,0.000 256.000,0.000 C397.385,0.000 512.000,114.615 512.000,256.000 C512.000,397.385 397.385,512.000 256.000,512.000 ZM108.159,344.493 L191.319,265.831 L108.159,197.002 L108.159,344.493 ZM403.839,147.838 L108.159,147.838 L108.159,177.337 L255.999,305.162 L403.839,177.337 L403.839,147.838 ZM403.839,197.002 L320.679,265.831 L403.839,344.493 L403.839,197.002 ZM311.439,275.663 L255.999,324.827 L200.559,275.663 L108.159,364.158 L403.839,364.158 L311.439,275.663 Z"/></svg>
-									</div>
-								</a>
-								<!-- From https://simpleicons.org/ -->
-								<a href="https://www.linkedin.com/in/daniel-b-munro/">
-									<div>
-										<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>LinkedIn</title><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-									</div>
-								</a>
-								<a href="https://scholar.google.com/citations?user=BkRb2A0AAAAJ&hl=en">
-									<div>
-										<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Google Scholar</title><path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/></svg>
-									</div>
-								</a>
-								<!-- <a href="https://github.com/daniel-munro"><svg width="32" height="32" viewbox="0 0 20 20"><use xlink:href="/img/minima-social-icons.svg#github"></use></svg></a> -->
-								<a href="https://github.com/daniel-munro">
-									<div>
-										<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
-									</div>
-								</a>
-								<!-- <a href="https://twitter.com/danbmunro"><svg width="32" height="32" viewbox="0 0 20 20"><use xlink:href="/img/minima-social-icons.svg#twitter"></use></svg></a> -->
-							</li>
-						</ul>
-					</div>
-				</nav>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Daniel Munro</title>
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@danbmunro" />
+    <meta name="twitter:title" content="Daniel Munro" />
+    <meta property="og:title" content="Daniel Munro" />
+    <meta name="twitter:url" content="https://danmun.ro/" />
+    <meta property="og:url" content="https://danmun.ro/" />
+    <meta
+      name="description"
+      content="Computational biologist at UC San Diego and Seattle Children's Research Institute."
+    />
+    <meta
+      name="twitter:description"
+      content="Computational biologist at UC San Diego and Seattle Children's Research Institute."
+    />
+    <meta
+      property="og:description"
+      content="Computational biologist at UC San Diego and Seattle Children's Research Institute."
+    />
+    <meta
+      name="twitter:image:src"
+      content="https://danmun.ro/img/Daniel_Munro.jpg"
+    />
+    <meta
+      property="og:image"
+      content="https://danmun.ro/img/Daniel_Munro.jpg"
+    />
+    <meta property="og:type" content="website" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/main.css" />
+  </head>
 
-				<div class="col-md-9">
+  <body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="20">
+    <div class="container-fluid" style="max-width: 1200px">
+      <div class="row">
+        <nav id="navbar" class="col-md-3">
+          <div class="sticky-top">
+            <ul class="nav nav-pills nav-stacked flex-column">
+              <li class="nav-item text-center">
+                <img
+                  id="photo"
+                  class="img-fluid rounded-circle mt-2"
+                  src="/img/Daniel_Munro.jpg"
+                  style="max-width: 200px"
+                />
+                <h1>Daniel Munro</h1>
+                <h5>Computational Biologist</h5>
+              </li>
+              <li class="nav-item d-none d-md-block">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item d-none d-md-block">
+                <a class="nav-link" href="#cv">CV</a>
+              </li>
+              <li class="nav-item d-none d-md-block">
+                <a class="nav-link" href="#publications">Publications</a>
+              </li>
+              <li class="nav-item d-none d-md-block">
+                <a class="nav-link" href="#talks">Talks</a>
+              </li>
+              <li class="nav-item d-none d-md-block">
+                <a class="nav-link" href="#writing">Writing</a>
+              </li>
+              <li class="nav-item d-none d-md-block">
+                <a class="nav-link" href="#etc">Etc.</a>
+              </li>
+              <li class="icons nav-item text-center p-3">
+                <a href="mailto:dmunro@health.ucsd.edu">
+                  <div>
+                    <svg
+                      rule="img"
+                      viewBox="0 0 512 512"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <title>Email</title>
+                      <path
+                        d="M256.000,512.000 C114.615,512.000 0.000,397.385 0.000,256.000 C0.000,114.615 114.615,0.000 256.000,0.000 C397.385,0.000 512.000,114.615 512.000,256.000 C512.000,397.385 397.385,512.000 256.000,512.000 ZM108.159,344.493 L191.319,265.831 L108.159,197.002 L108.159,344.493 ZM403.839,147.838 L108.159,147.838 L108.159,177.337 L255.999,305.162 L403.839,177.337 L403.839,147.838 ZM403.839,197.002 L320.679,265.831 L403.839,344.493 L403.839,197.002 ZM311.439,275.663 L255.999,324.827 L200.559,275.663 L108.159,364.158 L403.839,364.158 L311.439,275.663 Z"
+                      />
+                    </svg>
+                  </div>
+                </a>
+                <!-- From https://simpleicons.org/ -->
+                <a href="https://www.linkedin.com/in/daniel-b-munro/">
+                  <div>
+                    <svg
+                      role="img"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <title>LinkedIn</title>
+                      <path
+                        d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+                      />
+                    </svg>
+                  </div>
+                </a>
+                <a
+                  href="https://scholar.google.com/citations?user=BkRb2A0AAAAJ&hl=en"
+                >
+                  <div>
+                    <svg
+                      role="img"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <title>Google Scholar</title>
+                      <path
+                        d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"
+                      />
+                    </svg>
+                  </div>
+                </a>
+                <a href="https://github.com/daniel-munro">
+                  <div>
+                    <svg
+                      role="img"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <title>GitHub</title>
+                      <path
+                        d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+                      />
+                    </svg>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
 
-					<section id="about">
-						<p>
-							I am an Assistant Project Scientist in the <a href="https://palmerlab.org">Palmer Lab</a> at <a href="https://psychiatry.ucsd.edu">UC San Diego</a> and a Visiting Scientist in the <a href="http://pejlab.org">Genomic Data Modeling Lab</a> at <a href="https://www.seattlechildrens.org/research/research-institute/">Seattle Children's Research Institute</a>. I use computational approaches to study genomic regulatory variation and to integrate transcriptomic genetic associations with complex traits. I created and manage the <a href="https://ratgtex.org">RatGTEx Portal</a>, and developed <a href="https://pantry.pejlab.org">Pantry</a> for multimodal RNA phenotyping and genetic analysis.
-						</p>
-						<p>
-							I received my PhD in Quantitative and Computational Biology from Princeton University, advised by <a href="https://www.cs.princeton.edu/~mona/">Mona Singh</a>. My research involved amino acid substitution impact (<a href="https://demask.princeton.edu">DeMaSk</a>), cancer mutations in zinc finger domains, and linking gene expression with tissue morphology.
-						</p>
-						<p>
-							I have a strong interest in bioastronautics and was a test subject in NASA's <a href="https://en.wikipedia.org/wiki/NASA_Exploration_Atmosphere_Tests">Exploration Atmosphere study</a> at Johnson Space Center, July-August 2025.
-						</p>
-					</section>
+        <div class="col-md-9">
+          <section id="about">
+            <p>
+              I am an Assistant Project Scientist in the
+              <a href="https://palmerlab.org">Palmer Lab</a> at
+              <a href="https://psychiatry.ucsd.edu">UC San Diego</a> and a
+              Visiting Scientist in the
+              <a href="http://pejlab.org">Genomic Data Modeling Lab</a> at
+              <a
+                href="https://www.seattlechildrens.org/research/research-institute/"
+              >
+                Seattle Children's Research Institute</a
+              >. I use computational approaches to study genomic regulatory
+              variation and to integrate transcriptomic genetic associations
+              with complex traits. I created and manage the
+              <a href="https://ratgtex.org">RatGTEx Portal</a>, and developed
+              <a href="https://pantry.pejlab.org">Pantry</a> for multimodal RNA
+              phenotyping and genetic analysis.
+            </p>
+            <p>
+              I received my PhD in Quantitative and Computational Biology from
+              Princeton University, advised by
+              <a href="https://www.cs.princeton.edu/~mona/">Mona Singh</a>. My
+              research involved amino acid substitution impact (<a
+                href="https://demask.princeton.edu"
+                >DeMaSk</a
+              >), cancer mutations in zinc finger domains, and linking gene
+              expression with tissue morphology.
+            </p>
+            <p>
+              I have a strong interest in bioastronautics and was a test subject
+              in NASA's
+              <a
+                href="https://en.wikipedia.org/wiki/NASA_Exploration_Atmosphere_Tests"
+              >
+                Exploration Atmosphere study</a
+              >
+              at Johnson Space Center, July-August 2025.
+            </p>
+          </section>
 
-					<section id="cv">
-						<!-- <a href="/Daniel_Munro_CV.pdf"><h4>Curriculum Vitae</h4></a> -->
-						<a href="/Daniel_Munro_CV.pdf">
-							<button type="button" class="btn btn-primary btn-lg">Curriculum Vitae</button>
-						</a>
-					</section>
-					
-					<section id="publications">
-						<h2>Publications</h2>
-						
-						<p>
-							<a href="https://scholar.google.com/citations?hl=en&authuser=2&user=BkRb2A0AAAAJ">Google Scholar profile</a>
-							<br>
-							<a href="https://orcid.org/0000-0002-0724-218X">ORCID profile</a>
-						</p>
+          <section id="cv">
+            <a href="/Daniel_Munro_CV.pdf">
+              <button type="button" class="btn btn-primary btn-lg">
+                Curriculum Vitae
+              </button>
+            </a>
+          </section>
 
-						<h4>Selected Publications</h4>
+          <section id="publications">
+            <h2>Publications</h2>
 
-						<div class="row mb-4">
-							<div class="col-sm-3">
-								<a href="https://www.nature.com/articles/s41467-024-54840-8">
-									<img class="img-fluid img-thumbnail" src="img/pubs/Pantry.png">
-								</a>
-							</div>
-							<div class="col-sm-9">
-								<h6><a href="https://www.nature.com/articles/s41467-024-54840-8">Multimodal analysis of RNA sequencing data powers discovery of complex trait genetics</a></h6>
-								<h6 class="text-muted fw-normal">Munro et al. <i>Nature Communications</i> 2024</h6>
-								<a href="https://pantry.pejlab.org">Website</a>
-							</div>
-						</div>
-						
-						<div class="row mb-4">
-							<div class="col-sm-3">
-								<a href="https://academic.oup.com/nar/article/50/19/10882/6764417">
-									<img class="img-fluid img-thumbnail" src="img/pubs/the_regulatory_landscape.png">
-								</a>
-							</div>
-							<div class="col-sm-9">
-								<h6><a href="https://academic.oup.com/nar/article/50/19/10882/6764417">The regulatory landscape of multiple brain regions in outbred heterogeneous stock rats</a></h6>
-								<h6 class="text-muted fw-normal">Munro et al. <i>Nucleic Acids Research</i> 2022</h6>
-							</div>
-						</div>
-						
-						<div class="row mb-4">
-							<div class="col-sm-3">
-								<a href="https://www.nature.com/articles/s41467-021-21727-x">
-									<img class="img-fluid img-thumbnail" src="img/pubs/joint_analysis_of.png">
-								</a>
-							</div>
-							<div class="col-sm-9">
-								<h6><a href="https://www.nature.com/articles/s41467-021-21727-x">Joint analysis of gene expression levels and histological images identifies genes associated with tissue morphology</a></h6>
-								<h6 class="text-muted fw-normal">Ash*, Darnell*, Munro*, and Engelhardt <i>Nature Communications</i> 2021</h6>
-							</div>
-						</div>
-						
-						<div class="row mb-4">
-							<div class="col-sm-3">
-								<a href="https://academic.oup.com/bioinformatics/article/36/22-23/5322/6039113">
-									<img class="img-fluid img-thumbnail" src="img/pubs/demask_a_deep.png">
-								</a>
-							</div>
-							<div class="col-sm-9">
-								<h6><a href="https://academic.oup.com/bioinformatics/article/36/22-23/5322/6039113">DeMaSk: a deep mutational scanning substitution matrix and its use for variant impact prediction</a></h6>
-								<h6 class="text-muted fw-normal">Munro and Singh <i>Bioinformatics</i> 2020</h6>
-								<a href="https://demask.princeton.edu">Website</a>
-							</div>
-						</div>
-						
-						<div class="row mb-4">
-							<div class="col-sm-3">
-								<a href="https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1006290">
-									<img class="img-fluid img-thumbnail" src="img/pubs/two_critical_positions.png">
-								</a>
-							</div>
-							<div class="col-sm-9">
-								<h6><a href="https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1006290">Two critical positions in zinc finger domains are heavily mutated in three human cancer types</a></h6>
-								<h6 class="text-muted fw-normal">Munro et al. <i>PLOS Computational Biology</i> 2018</h6>
-								<a href="https://www.princeton.edu/news/2018/08/08/sea-mutations-two-possible-cancer-links-rise-surface">Press release</a>
-							</div>
-						</div>
-						
-						<h4>Additional Publications</h4>
+            <p>
+              <a
+                href="https://scholar.google.com/citations?hl=en&authuser=2&user=BkRb2A0AAAAJ"
+                >Google Scholar profile</a
+              >
+              <br />
+              <a href="https://orcid.org/0000-0002-0724-218X">ORCID profile</a>
+            </p>
 
-						<!-- <span class="badge bg-secondary">Preprint</span> -->
-						<div class="row mb-4">
-							<div class="col-sm-3">
-								<a href="https://www.biorxiv.org/content/10.1101/2025.10.14.682432v1">
-									<img class="img-fluid img-thumbnail" src="img/pubs/ivermectin.jpg">
-								</a>
-							</div>
-							<div class="col-sm-9">
-								<h6><span class="badge bg-secondary">Preprint</span> <a href="https://www.biorxiv.org/content/10.1101/2025.10.14.682432v1">Ivermectin Reduces Withdrawal-Induced Alcohol Intake via CeA GABAergic Enhancement</a></h6>
-								<h6 class="text-muted fw-normal"><i>bioRxiv</i> 2025</h6>
-							</div>
-						</div>
-						
-						<div class="row mb-4">
-							<div class="col-sm-3">
-								<a href="https://www.biorxiv.org/content/10.1101/2025.05.30.657086v2">
-									<img class="img-fluid img-thumbnail" src="img/pubs/ASEQC.jpg">
-								</a>
-							</div>
-							<div class="col-sm-9">
-								<h6><span class="badge bg-secondary">Preprint</span> <a href="https://www.biorxiv.org/content/10.1101/2025.05.30.657086v2">Allele Specific Expression Quality Control Fills Critical Gap in Transcriptome Assisted Rare Variant Interpretation</a></h6>
-								<h6 class="text-muted fw-normal"><i>bioRxiv</i> 2025</h6>
-							</div>
-						</div>
-						
-						<div class="row mb-4">
-							<div class="col-sm-3">
-								<a href="https://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1011583">
-									<img class="img-fluid img-thumbnail" src="img/pubs/RatXcan.jpg">
-								</a>
-							</div>
-							<div class="col-sm-9">
-								<h6><a href="https://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1011583">RatXcan: A framework for cross-species integration of genome-wide association and gene expression data</a></h6>
-								<h6 class="text-muted fw-normal"><i>PLOS Genetics</i> 2025</h6>
-							</div>
-						</div>
-						
-						<div class="row mb-4">
-							<div class="col-sm-3">
-								<a href="https://www.frontiersin.org/journals/molecular-neuroscience/articles/10.3389/fnmol.2025.1469467/full">
-									<img class="img-fluid img-thumbnail" src="img/pubs/hippocampus_F2.jpg">
-								</a>
-							</div>
-							<div class="col-sm-9">
-								<h6><a href="https://www.frontiersin.org/journals/molecular-neuroscience/articles/10.3389/fnmol.2025.1469467/full">Bioenergetic-related gene expression in the hippocampus predicts internalizing vs. externalizing behavior in an animal model of temperament</a></h6>
-								<h6 class="text-muted fw-normal"><i>Frontiers in Molecular Neuroscience</i> 2025</h6>
-							</div>
-						</div>
-						
-						<div class="row mb-4">
-							<div class="col-sm-3">
-								<a href="https://doi.org/10.1093/g3journal/jkae213">
-									<img class="img-fluid img-thumbnail" src="img/pubs/Y_MT.png">
-								</a>
-							</div>
-							<div class="col-sm-9">
-								<h6><a href="https://doi.org/10.1093/g3journal/jkae213">Y and mitochondrial chromosomes in the heterogeneous stock rat population</a></h6>
-								<h6 class="text-muted fw-normal"><i>G3 Genes|Genomes|Genetics</i> 2024</h6>
-							</div>
-						</div>
-						
-						<div class="row mb-4">
-							<div class="col-sm-3">
-								<a href="https://www.cell.com/cell-genomics/fulltext/S2666-979X(24)00069-7">
-									<img class="img-fluid img-thumbnail" src="img/pubs/revamped_rat_reference.png">
-								</a>
-							</div>
-							<div class="col-sm-9">
-								<h6><a href="https://www.cell.com/cell-genomics/fulltext/S2666-979X(24)00069-7">A revamped rat reference genome improves the discovery of genetic diversity in laboratory rats</a></h6>
-								<h6 class="text-muted fw-normal"><i>Cell Genomics</i> 2024</h6>
-							</div>
-						</div>
-						
-						<div class="row mb-4">
-							<div class="col-sm-3">
-								<a href="https://link.springer.com/article/10.1007/s10162-023-00917-y">
-									<img class="img-fluid img-thumbnail" src="img/pubs/gwas_of_chronic_dizziness.png">
-								</a>
-							</div>
-							<div class="col-sm-9">
-								<h6><a href="https://link.springer.com/article/10.1007/s10162-023-00917-y">Genome-wide association study of chronic dizziness in the elderly identifies loci implicating <i>MLLT10</i>, <i>BPTF</i>, <i>LINC01224</i>, and <i>ROS1</i></a></h6>
-								<h6 class="text-muted fw-normal"><i>JARO</i> 2023</h6>
-							</div>
-						</div>
-						
-						<div class="row mb-4">
-							<div class="col-sm-3">
-								<a href="https://www.nature.com/articles/s41593-023-01452-y">
-									<img class="img-fluid img-thumbnail" src="img/pubs/cocaine_addiction.png">
-								</a>
-							</div>
-							<div class="col-sm-9">
-								<h6><a href="https://www.nature.com/articles/s41593-023-01452-y">Single-nucleus genomics in outbred rats with divergent cocaine addiction-like behaviors reveals changes in amygdala GABAergic inhibition</a></h6>
-								<h6 class="text-muted fw-normal"><i>Nature Neuroscience</i> 2023</h6>
-								<a href="https://www.nature.com/articles/s41593-023-01454-w">Research Briefing</a>
-							</div>
-						</div>
-						
-						<div class="row mb-4">
-							<div class="col-sm-3">
-								<a href="https://academic.oup.com/genetics/advance-article-abstract/doi/10.1093/genetics/iyad054/7090260">
-									<img class="img-fluid img-thumbnail" src="img/pubs/sample_size.jpg">
-								</a>
-							</div>
-							<div class="col-sm-9">
-								<h6><a href="https://academic.oup.com/genetics/advance-article-abstract/doi/10.1093/genetics/iyad054/7090260">Exponential increase in QTL detection with increased sample size</a></h6>
-								<h6 class="text-muted fw-normal"><i>GENETICS</i> 2023</h6>
-							</div>
-						</div>
-						
-						<div class="row mb-4">
-							<div class="col-sm-3">
-								<a href="https://www.frontiersin.org/articles/10.3389/fgene.2022.1029058/full">
-									<img class="img-fluid img-thumbnail" src="img/pubs/GWAS_IOP.jpg">
-								</a>
-							</div>
-							<div class="col-sm-9">
-								<h6><a href="https://www.frontiersin.org/articles/10.3389/fgene.2022.1029058/full">Genome-wide association study finds multiple loci associated with intraocular pressure in HS rats</a></h6>
-								<h6 class="text-muted fw-normal"><i>Frontiers in Genetics</i> 2023</h6>
-							</div>
-						</div>
-						
-						<div class="row mb-4">
-							<div class="col-sm-3">
-								<a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/humu.23979">
-									<img class="img-fluid img-thumbnail" src="img/pubs/a_protein-centric.png">
-								</a>
-							</div>
-							<div class="col-sm-9">
-								<h6><a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/humu.23979">A protein-centric approach for exome variant aggregation enables sensitive association analysis with clinical outcomes</a></h6>
-								<h6 class="text-muted fw-normal"><i>Human Mutation</i> 2020</h6>
-							</div>
-						</div>
+            <h4>Selected Publications</h4>
 
-						<div class="row mb-4">
-							<div class="col-sm-3">
-								<a href="https://www.nature.com/articles/ismej2014255">
-									<img class="img-fluid img-thumbnail" src="img/pubs/similarities_and_seasonal.png">
-								</a>
-							</div>
-							<div class="col-sm-9">
-								<h6><a href="https://www.nature.com/articles/ismej2014255">Similarities and seasonal variations in bacterial communities from the blood of rodents and from their flea vectors</a></h6>
-								<h6 class="text-muted fw-normal"><i>The ISME Journal</i> 2015</h6>
-							</div>
-						</div>
-						
-						<div class="row mb-4">
-							<div class="col-sm-3">
-								<a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0109677">
-									<img class="img-fluid img-thumbnail" src="img/pubs/association_of_host.png">
-								</a>
-							</div>
-							<div class="col-sm-9">
-								<h6><a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0109677">Association of host and microbial species diversity across spatial scales in desert rodent communities</a></h6>
-								<h6 class="text-muted fw-normal"><i>PLOS One</i> 2014</h6>
-							</div>
-						</div>
-						
-						<div class="row mb-4">
-							<div class="col-sm-3">
-								<a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0061959">
-									<img class="img-fluid img-thumbnail" src="img/pubs/bacterial_community_profiling.png">
-								</a>
-							</div>
-							<div class="col-sm-9">
-								<h6><a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0061959">Bacterial community profiling of milk samples as a means to understand culture-negative bovine clinical mastitis</a></h6>
-								<h6 class="text-muted fw-normal"><i>PLOS One</i> 2013</h6>
-							</div>
-						</div>
-						
-						<div class="row mb-4">
-							<div class="col-sm-3">
-								<a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0061516">
-									<img class="img-fluid img-thumbnail" src="img/pubs/investigation_of_the.png">
-								</a>
-							</div>
-							<div class="col-sm-9">
-								<h6><a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0061516">Investigation of the effect of type 2 diabetes mellitus on subgingival plaque microbiota by high-throughput 16S rDNA pyrosequencing</a></h6>
-								<h6 class="text-muted fw-normal"><i>PLOS One</i> 2013</h6>
-							</div>
-						</div>
-						
-						<div class="row mb-4">
-							<div class="col-sm-3">
-								<a href="https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-13-190">
-									<img class="img-fluid img-thumbnail" src="img/pubs/a_web-based.png">
-								</a>
-							</div>
-							<div class="col-sm-9">
-								<h6><a href="https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-13-190">A web-based multi-genome synteny viewer for customized data</a></h6>
-								<h6 class="text-muted fw-normal"><i>BMC Bioinformatics</i> 2012</h6>
-							</div>
-						</div>
-						
-						<div class="row mb-4">
-							<div class="col-sm-3">
-								<a href="https://www.nature.com/articles/ismej201271">
-									<img class="img-fluid img-thumbnail" src="img/pubs/the_arthropod_but.png">
-								</a>
-							</div>
-							<div class="col-sm-9">
-								<h6><a href="https://www.nature.com/articles/ismej201271">The arthropod, but not the vertebrate host or its environment, dictates bacterial community composition of fleas and ticks</a></h6>
-								<h6 class="text-muted fw-normal"><i>The ISME Journal</i> 2013</h6>
-							</div>
-						</div>
+            <div class="row mb-4">
+              <div class="col-sm-3">
+                <a href="https://www.nature.com/articles/s41467-024-54840-8">
+                  <img
+                    class="img-fluid img-thumbnail"
+                    src="img/pubs/Pantry.png"
+                  />
+                </a>
+              </div>
+              <div class="col-sm-9">
+                <h6>
+                  <a href="https://www.nature.com/articles/s41467-024-54840-8"
+                    >Multimodal analysis of RNA sequencing data powers discovery
+                    of complex trait genetics</a
+                  >
+                </h6>
+                <h6 class="text-muted fw-normal">
+                  Munro et al. <i>Nature Communications</i> 2024
+                </h6>
+                <a href="https://pantry.pejlab.org">Website</a>
+              </div>
+            </div>
 
-					</section>
+            <div class="row mb-4">
+              <div class="col-sm-3">
+                <a
+                  href="https://academic.oup.com/nar/article/50/19/10882/6764417"
+                >
+                  <img
+                    class="img-fluid img-thumbnail"
+                    src="img/pubs/the_regulatory_landscape.png"
+                  />
+                </a>
+              </div>
+              <div class="col-sm-9">
+                <h6>
+                  <a
+                    href="https://academic.oup.com/nar/article/50/19/10882/6764417"
+                    >The regulatory landscape of multiple brain regions in
+                    outbred heterogeneous stock rats</a
+                  >
+                </h6>
+                <h6 class="text-muted fw-normal">
+                  Munro et al. <i>Nucleic Acids Research</i> 2022
+                </h6>
+              </div>
+            </div>
 
-					<section id="talks">
+            <div class="row mb-4">
+              <div class="col-sm-3">
+                <a href="https://www.nature.com/articles/s41467-021-21727-x">
+                  <img
+                    class="img-fluid img-thumbnail"
+                    src="img/pubs/joint_analysis_of.png"
+                  />
+                </a>
+              </div>
+              <div class="col-sm-9">
+                <h6>
+                  <a href="https://www.nature.com/articles/s41467-021-21727-x"
+                    >Joint analysis of gene expression levels and histological
+                    images identifies genes associated with tissue morphology</a
+                  >
+                </h6>
+                <h6 class="text-muted fw-normal">
+                  Ash*, Darnell*, Munro*, and Engelhardt
+                  <i>Nature Communications</i> 2021
+                </h6>
+              </div>
+            </div>
 
-						<h2>Talks</h2>
+            <div class="row mb-4">
+              <div class="col-sm-3">
+                <a
+                  href="https://academic.oup.com/bioinformatics/article/36/22-23/5322/6039113"
+                >
+                  <img
+                    class="img-fluid img-thumbnail"
+                    src="img/pubs/demask_a_deep.png"
+                  />
+                </a>
+              </div>
+              <div class="col-sm-9">
+                <h6>
+                  <a
+                    href="https://academic.oup.com/bioinformatics/article/36/22-23/5322/6039113"
+                    >DeMaSk: a deep mutational scanning substitution matrix and
+                    its use for variant impact prediction</a
+                  >
+                </h6>
+                <h6 class="text-muted fw-normal">
+                  Munro and Singh <i>Bioinformatics</i> 2020
+                </h6>
+                <a href="https://demask.princeton.edu">Website</a>
+              </div>
+            </div>
 
-						<div class="row mb-4">
-							<div class="col-sm-3">
-								<a href="https://www.youtube.com/watch?v=DbKM82gL60Y&list=PLyt8aksOTXY_C27JCWE29neFXYFUpGdBc&index=2">
-									<img class="img-fluid img-thumbnail" src="img/CTC-RG2021.png">
-								</a>
-							</div>
-							<div class="col-sm-9">
-								<h6><a href="https://www.youtube.com/watch?v=DbKM82gL60Y&list=PLyt8aksOTXY_C27JCWE29neFXYFUpGdBc&index=2">Identification of regulatory landscape in multiple brain regions of outbred heterogeneous stock rats</a></h6>
-								<h6 class="text-muted fw-normal">Complex Trait Consortium-Rat Genomics 2021 meeting</h6>
-							</div>
-						</div>
+            <div class="row mb-4">
+              <div class="col-sm-3">
+                <a
+                  href="https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1006290"
+                >
+                  <img
+                    class="img-fluid img-thumbnail"
+                    src="img/pubs/two_critical_positions.png"
+                  />
+                </a>
+              </div>
+              <div class="col-sm-9">
+                <h6>
+                  <a
+                    href="https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1006290"
+                    >Two critical positions in zinc finger domains are heavily
+                    mutated in three human cancer types</a
+                  >
+                </h6>
+                <h6 class="text-muted fw-normal">
+                  Munro et al. <i>PLOS Computational Biology</i> 2018
+                </h6>
+                <a
+                  href="https://www.princeton.edu/news/2018/08/08/sea-mutations-two-possible-cancer-links-rise-surface"
+                  >Press release</a
+                >
+              </div>
+            </div>
 
-					</section>
+            <h4>Additional Publications</h4>
 
-					<section id="writing">
+            <!-- <span class="badge bg-secondary">Preprint</span> -->
+            <div class="row mb-4">
+              <div class="col-sm-3">
+                <a
+                  href="https://www.biorxiv.org/content/10.1101/2025.10.14.682432v1"
+                >
+                  <img
+                    class="img-fluid img-thumbnail"
+                    src="img/pubs/ivermectin.jpg"
+                  />
+                </a>
+              </div>
+              <div class="col-sm-9">
+                <h6>
+                  <span class="badge bg-secondary">Preprint</span>
+                  <a
+                    href="https://www.biorxiv.org/content/10.1101/2025.10.14.682432v1"
+                    >Ivermectin Reduces Withdrawal-Induced Alcohol Intake via
+                    CeA GABAergic Enhancement</a
+                  >
+                </h6>
+                <h6 class="text-muted fw-normal"><i>bioRxiv</i> 2025</h6>
+              </div>
+            </div>
 
-						<h2>Writing</h2>
+            <div class="row mb-4">
+              <div class="col-sm-3">
+                <a
+                  href="https://www.biorxiv.org/content/10.1101/2025.05.30.657086v2"
+                >
+                  <img
+                    class="img-fluid img-thumbnail"
+                    src="img/pubs/ASEQC.jpg"
+                  />
+                </a>
+              </div>
+              <div class="col-sm-9">
+                <h6>
+                  <span class="badge bg-secondary">Preprint</span>
+                  <a
+                    href="https://www.biorxiv.org/content/10.1101/2025.05.30.657086v2"
+                    >Allele Specific Expression Quality Control Fills Critical
+                    Gap in Transcriptome Assisted Rare Variant Interpretation</a
+                  >
+                </h6>
+                <h6 class="text-muted fw-normal"><i>bioRxiv</i> 2025</h6>
+              </div>
+            </div>
 
-						<div class="row mb-3">
-							<h5>Data Science D-Mun-strations</h5>
-							<h6><a href="/blog/heat-scatter-plot.html">Heat-scatter plots</a> <span class="text-muted fw-normal">August 2024</span></h6>
-							<h6><a href="/blog/rubiks-cube.html">Rubik's Cube configurations</a> <span class="text-muted fw-normal">May 2024</span></h6>
-							<h6><a href="/blog/mapping-mazes.html">Mapping mazes from the inside</a> <span class="text-muted fw-normal">April 2024</span></h6>
-						</div>
+            <div class="row mb-4">
+              <div class="col-sm-3">
+                <a
+                  href="https://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1011583"
+                >
+                  <img
+                    class="img-fluid img-thumbnail"
+                    src="img/pubs/RatXcan.jpg"
+                  />
+                </a>
+              </div>
+              <div class="col-sm-9">
+                <h6>
+                  <a
+                    href="https://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1011583"
+                    >RatXcan: A framework for cross-species integration of
+                    genome-wide association and gene expression data</a
+                  >
+                </h6>
+                <h6 class="text-muted fw-normal"><i>PLOS Genetics</i> 2025</h6>
+              </div>
+            </div>
 
-						<div class="row mb-3">
-							<h6><a href="https://www.metaculus.com/notebooks/9191/methods-for-solving-protein-structures/">Methods for Solving Protein Structures</a></h6>
-							<h6 class="text-muted fw-normal">Metaculus Journal, 2022</h6>
-						</div>
+            <div class="row mb-4">
+              <div class="col-sm-3">
+                <a
+                  href="https://www.frontiersin.org/journals/molecular-neuroscience/articles/10.3389/fnmol.2025.1469467/full"
+                >
+                  <img
+                    class="img-fluid img-thumbnail"
+                    src="img/pubs/hippocampus_F2.jpg"
+                  />
+                </a>
+              </div>
+              <div class="col-sm-9">
+                <h6>
+                  <a
+                    href="https://www.frontiersin.org/journals/molecular-neuroscience/articles/10.3389/fnmol.2025.1469467/full"
+                    >Bioenergetic-related gene expression in the hippocampus
+                    predicts internalizing vs. externalizing behavior in an
+                    animal model of temperament</a
+                  >
+                </h6>
+                <h6 class="text-muted fw-normal">
+                  <i>Frontiers in Molecular Neuroscience</i> 2025
+                </h6>
+              </div>
+            </div>
 
-						<div class="row mb-3">
-							<h6><a href="https://www.metaculus.com/notebooks/8701/the-path-to-controlling-cancer/">The Path to Controlling Cancer</a></h6>
-							<h6 class="text-muted fw-normal">Metaculus Journal, 2021</h6>
-						</div>
+            <div class="row mb-4">
+              <div class="col-sm-3">
+                <a href="https://doi.org/10.1093/g3journal/jkae213">
+                  <img
+                    class="img-fluid img-thumbnail"
+                    src="img/pubs/Y_MT.png"
+                  />
+                </a>
+              </div>
+              <div class="col-sm-9">
+                <h6>
+                  <a href="https://doi.org/10.1093/g3journal/jkae213">
+                    Y and mitochondrial chromosomes in the heterogeneous stock
+                    rat population
+                  </a>
+                </h6>
+                <h6 class="text-muted fw-normal">
+                  <i>G3 Genes|Genomes|Genetics</i> 2024
+                </h6>
+              </div>
+            </div>
 
-						<div class="row mb-3">
-							<h6><a href="https://www.metaculus.com/notebooks/8289/lifespan-extension-in-dogs-and-longevity-research-signals/">Lifespan Extension in Dogs and Longevity Research Signals</a></h6>
-							<h6 class="text-muted fw-normal">Metaculus Journal, 2021</h6>
-						</div>
+            <div class="row mb-4">
+              <div class="col-sm-3">
+                <a
+                  href="https://www.cell.com/cell-genomics/fulltext/S2666-979X(24)00069-7"
+                >
+                  <img
+                    class="img-fluid img-thumbnail"
+                    src="img/pubs/revamped_rat_reference.png"
+                  />
+                </a>
+              </div>
+              <div class="col-sm-9">
+                <h6>
+                  <a
+                    href="https://www.cell.com/cell-genomics/fulltext/S2666-979X(24)00069-7"
+                  >
+                    A revamped rat reference genome improves the discovery of
+                    genetic diversity in laboratory rats
+                  </a>
+                </h6>
+                <h6 class="text-muted fw-normal"><i>Cell Genomics</i> 2024</h6>
+              </div>
+            </div>
 
-						<div class="row mb-3">
-							<h6><a href="http://coopersquarereview.org/post/the-neverending-interview/">The Neverending Interview</a></h6>
-							<h6 class="text-muted fw-normal">The Cooper Square Review, 2019</h6>
-						</div>
+            <div class="row mb-4">
+              <div class="col-sm-3">
+                <a
+                  href="https://link.springer.com/article/10.1007/s10162-023-00917-y"
+                >
+                  <img
+                    class="img-fluid img-thumbnail"
+                    src="img/pubs/gwas_of_chronic_dizziness.png"
+                  />
+                </a>
+              </div>
+              <div class="col-sm-9">
+                <h6>
+                  <a
+                    href="https://link.springer.com/article/10.1007/s10162-023-00917-y"
+                  >
+                    Genome-wide association study of chronic dizziness in the
+                    elderly identifies loci implicating <i>MLLT10</i>,
+                    <i>BPTF</i>, <i>LINC01224</i>, and <i>ROS1</i>
+                  </a>
+                </h6>
+                <h6 class="text-muted fw-normal"><i>JARO</i> 2023</h6>
+              </div>
+            </div>
 
-					</section>
+            <div class="row mb-4">
+              <div class="col-sm-3">
+                <a href="https://www.nature.com/articles/s41593-023-01452-y">
+                  <img
+                    class="img-fluid img-thumbnail"
+                    src="img/pubs/cocaine_addiction.png"
+                  />
+                </a>
+              </div>
+              <div class="col-sm-9">
+                <h6>
+                  <a href="https://www.nature.com/articles/s41593-023-01452-y">
+                    Single-nucleus genomics in outbred rats with divergent
+                    cocaine addiction-like behaviors reveals changes in amygdala
+                    GABAergic inhibition
+                  </a>
+                </h6>
+                <h6 class="text-muted fw-normal">
+                  <i>Nature Neuroscience</i> 2023
+                </h6>
+                <a href="https://www.nature.com/articles/s41593-023-01454-w">
+                  Research Briefing
+                </a>
+              </div>
+            </div>
 
-					<section id="etc">
+            <div class="row mb-4">
+              <div class="col-sm-3">
+                <a
+                  href="https://academic.oup.com/genetics/advance-article-abstract/doi/10.1093/genetics/iyad054/7090260"
+                >
+                  <img
+                    class="img-fluid img-thumbnail"
+                    src="img/pubs/sample_size.jpg"
+                  />
+                </a>
+              </div>
+              <div class="col-sm-9">
+                <h6>
+                  <a
+                    href="https://academic.oup.com/genetics/advance-article-abstract/doi/10.1093/genetics/iyad054/7090260"
+                  >
+                    Exponential increase in QTL detection with increased sample
+                    size
+                  </a>
+                </h6>
+                <h6 class="text-muted fw-normal"><i>GENETICS</i> 2023</h6>
+              </div>
+            </div>
 
-						<h2>Et cetera</h2>
+            <div class="row mb-4">
+              <div class="col-sm-3">
+                <a
+                  href="https://www.frontiersin.org/articles/10.3389/fgene.2022.1029058/full"
+                >
+                  <img
+                    class="img-fluid img-thumbnail"
+                    src="img/pubs/GWAS_IOP.jpg"
+                  />
+                </a>
+              </div>
+              <div class="col-sm-9">
+                <h6>
+                  <a
+                    href="https://www.frontiersin.org/articles/10.3389/fgene.2022.1029058/full"
+                  >
+                    Genome-wide association study finds multiple loci associated
+                    with intraocular pressure in HS rats
+                  </a>
+                </h6>
+                <h6 class="text-muted fw-normal">
+                  <i>Frontiers in Genetics</i> 2023
+                </h6>
+              </div>
+            </div>
 
-						<hr>
+            <div class="row mb-4">
+              <div class="col-sm-3">
+                <a
+                  href="https://onlinelibrary.wiley.com/doi/abs/10.1002/humu.23979"
+                >
+                  <img
+                    class="img-fluid img-thumbnail"
+                    src="img/pubs/a_protein-centric.png"
+                  />
+                </a>
+              </div>
+              <div class="col-sm-9">
+                <h6>
+                  <a
+                    href="https://onlinelibrary.wiley.com/doi/abs/10.1002/humu.23979"
+                  >
+                    A protein-centric approach for exome variant aggregation
+                    enables sensitive association analysis with clinical
+                    outcomes
+                  </a>
+                </h6>
+                <h6 class="text-muted fw-normal"><i>Human Mutation</i> 2020</h6>
+              </div>
+            </div>
 
-						<h5>Certifications:</h5>
+            <div class="row mb-4">
+              <div class="col-sm-3">
+                <a href="https://www.nature.com/articles/ismej2014255">
+                  <img
+                    class="img-fluid img-thumbnail"
+                    src="img/pubs/similarities_and_seasonal.png"
+                  />
+                </a>
+              </div>
+              <div class="col-sm-9">
+                <h6>
+                  <a href="https://www.nature.com/articles/ismej2014255">
+                    Similarities and seasonal variations in bacterial
+                    communities from the blood of rodents and from their flea
+                    vectors
+                  </a>
+                </h6>
+                <h6 class="text-muted fw-normal">
+                  <i>The ISME Journal</i> 2015
+                </h6>
+              </div>
+            </div>
 
-						<h6>Initial Physiological Training Course <span class="text-muted fw-normal">&ndash; NASA (2024-11-07 @ Neutral Buoyancy Laboratory, Houston, TX)</span></h6>
+            <div class="row mb-4">
+              <div class="col-sm-3">
+                <a
+                  href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0109677"
+                >
+                  <img
+                    class="img-fluid img-thumbnail"
+                    src="img/pubs/association_of_host.png"
+                  />
+                </a>
+              </div>
+              <div class="col-sm-9">
+                <h6>
+                  <a
+                    href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0109677"
+                  >
+                    Association of host and microbial species diversity across
+                    spatial scales in desert rodent communities
+                  </a>
+                </h6>
+                <h6 class="text-muted fw-normal"><i>PLOS One</i> 2014</h6>
+              </div>
+            </div>
 
-						<h6>Open Water Diver <span class="text-muted fw-normal">&ndash; PADI (2024)</span></h6>
+            <div class="row mb-4">
+              <div class="col-sm-3">
+                <a
+                  href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0061959"
+                >
+                  <img
+                    class="img-fluid img-thumbnail"
+                    src="img/pubs/bacterial_community_profiling.png"
+                  />
+                </a>
+              </div>
+              <div class="col-sm-9">
+                <h6>
+                  <a
+                    href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0061959"
+                  >
+                    Bacterial community profiling of milk samples as a means to
+                    understand culture-negative bovine clinical mastitis
+                  </a>
+                </h6>
+                <h6 class="text-muted fw-normal"><i>PLOS One</i> 2013</h6>
+              </div>
+            </div>
 
-						<h6>Amateur Radio License, General Class <span class="text-muted fw-normal">&ndash; FCC (2024)</span></h6>
+            <div class="row mb-4">
+              <div class="col-sm-3">
+                <a
+                  href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0061516"
+                >
+                  <img
+                    class="img-fluid img-thumbnail"
+                    src="img/pubs/investigation_of_the.png"
+                  />
+                </a>
+              </div>
+              <div class="col-sm-9">
+                <h6>
+                  <a
+                    href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0061516"
+                  >
+                    Investigation of the effect of type 2 diabetes mellitus on
+                    subgingival plaque microbiota by high-throughput 16S rDNA
+                    pyrosequencing
+                  </a>
+                </h6>
+                <h6 class="text-muted fw-normal"><i>PLOS One</i> 2013</h6>
+              </div>
+            </div>
 
-						<hr>
+            <div class="row mb-4">
+              <div class="col-sm-3">
+                <a
+                  href="https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-13-190"
+                >
+                  <img
+                    class="img-fluid img-thumbnail"
+                    src="img/pubs/a_web-based.png"
+                  />
+                </a>
+              </div>
+              <div class="col-sm-9">
+                <h6>
+                  <a
+                    href="https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-13-190"
+                  >
+                    A web-based multi-genome synteny viewer for customized data
+                  </a>
+                </h6>
+                <h6 class="text-muted fw-normal">
+                  <i>BMC Bioinformatics</i> 2012
+                </h6>
+              </div>
+            </div>
 
-						<div class="row mb-4">
-							<div class="col-sm-3">
-								<a href="https://www.lastexam.ai">
-									<img class="img-fluid img-thumbnail" src="/img/hle.png">
-								</a>
-							</div>
-							<div class="col-sm-9">
-								<p>I wrote questions for the AI benchmark <a href="https://www.lastexam.ai">Humanity's Last Exam</a>, three of which are included in the public dataset (two on genetics and one on mathematics).</p>
-							</div>
-						</div>
+            <div class="row mb-4">
+              <div class="col-sm-3">
+                <a href="https://www.nature.com/articles/ismej201271">
+                  <img
+                    class="img-fluid img-thumbnail"
+                    src="img/pubs/the_arthropod_but.png"
+                  />
+                </a>
+              </div>
+              <div class="col-sm-9">
+                <h6>
+                  <a href="https://www.nature.com/articles/ismej201271">
+                    The arthropod, but not the vertebrate host or its
+                    environment, dictates bacterial community composition of
+                    fleas and ticks
+                  </a>
+                </h6>
+                <h6 class="text-muted fw-normal">
+                  <i>The ISME Journal</i> 2013
+                </h6>
+              </div>
+            </div>
+          </section>
 
-						<hr>
+          <section id="talks">
+            <h2>Talks</h2>
 
-						<div class="row mb-4">
-							<div class="col-sm-3">
-								<a href="https://vimeo.com/442865776">
-									<img src="/img/sequence.jpeg" class="img-fluid img-thumbnail" alt="still from Sequence">
-								</a>
-							</div>
-							<div class="col-sm-9">
-								<h5><a href="https://vimeo.com/442865776">SEQUENCE</a></h5>
-								<p>
-									I collaborated with Jin Angdoo on a short experimental film about proteins. It was <a href="https://www.labocine.com/spotlights/whats-emerged-from-the-symbiosis-competition-at-the-12th-annual-imagine-science-film-festival">runner-up for the Symbiosis Award</a> at the <a href="http://imaginesciencefilms.org/">Imagine Science Film Festival</a> 2019.
-								</p>
-							</div>
-						</div>
+            <div class="row mb-4">
+              <div class="col-sm-3">
+                <a
+                  href="https://www.youtube.com/watch?v=DbKM82gL60Y&list=PLyt8aksOTXY_C27JCWE29neFXYFUpGdBc&index=2"
+                >
+                  <img
+                    class="img-fluid img-thumbnail"
+                    src="img/CTC-RG2021.png"
+                  />
+                </a>
+              </div>
+              <div class="col-sm-9">
+                <h6>
+                  <a
+                    href="https://www.youtube.com/watch?v=DbKM82gL60Y&list=PLyt8aksOTXY_C27JCWE29neFXYFUpGdBc&index=2"
+                  >
+                    Identification of regulatory landscape in multiple brain
+                    regions of outbred heterogeneous stock rats
+                  </a>
+                </h6>
+                <h6 class="text-muted fw-normal">
+                  Complex Trait Consortium-Rat Genomics 2021 meeting
+                </h6>
+              </div>
+            </div>
+          </section>
 
-						<hr>
-						
-						<div class="row mb-4">
-							<div class="col-sm-3">
-								<a href="https://covid19sci.org">
-									<img class="img-fluid img-thumbnail" src="/img/logos.png">
-								</a>
-							</div>
-							<div class="col-sm-9">
-								<p>
-									I was the Website Manager for the <a href="https://covid19sci.org">COVID-19 National Scientist Volunteer Database</a>. I also designed the logos for that organization and <a href="https://endcoronavirus.org">EndCoronavirus.org</a>.
-								</p>
-							</div>
-						</div>
-						
-						<hr>
-						
-						<div class="row mb-4">
-							<div class="col-sm-3">
-								<a href="https://pbnify.com">
-									<img class="img-fluid img-thumbnail" src="/img/PBNify.png">
-								</a>
-							</div>
-							<div class="col-sm-9">
-								<h5><a href="https://pbnify.com">PBNify</a></h5>
-								<p>I created a web app to convert any image into a printable paint by number outline. I sold the site to Paintable Pictures.</p>
-							</div>
-						</div>
+          <section id="writing">
+            <h2>Writing</h2>
 
-						<hr>
+            <div class="row mb-3">
+              <h5>Data Science D-Mun-strations</h5>
+              <h6>
+                <a href="/blog/heat-scatter-plot.html">Heat-scatter plots</a>
+                <span class="text-muted fw-normal">August 2024</span>
+              </h6>
+              <h6>
+                <a href="/blog/rubiks-cube.html">Rubik's Cube configurations</a>
+                <span class="text-muted fw-normal">May 2024</span>
+              </h6>
+              <h6>
+                <a href="/blog/mapping-mazes.html">
+                  Mapping mazes from the inside
+                </a>
+                <span class="text-muted fw-normal">April 2024</span>
+              </h6>
+            </div>
 
-						<div class="row mb-4">
-							<div class="col-sm-3">
-								<a href="/graphics">
-									<img class="img-fluid img-thumbnail" src="/img/graphics.png">
-								</a>
-							</div>
-							<div class="col-sm-9">
-								<h5><a href="/graphics">Graphics</a></h5>
-								<p>I create generative art in Python.</p>
-							</div>
-						</div>
+            <div class="row mb-3">
+              <h6>
+                <a
+                  href="https://www.metaculus.com/notebooks/9191/methods-for-solving-protein-structures/"
+                >
+                  Methods for Solving Protein Structures
+                </a>
+              </h6>
+              <h6 class="text-muted fw-normal">Metaculus Journal, 2022</h6>
+            </div>
 
-					</section>
-				</div>
-			</div>
-		</div>
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
-	</body>
+            <div class="row mb-3">
+              <h6>
+                <a
+                  href="https://www.metaculus.com/notebooks/8701/the-path-to-controlling-cancer/"
+                >
+                  The Path to Controlling Cancer
+                </a>
+              </h6>
+              <h6 class="text-muted fw-normal">Metaculus Journal, 2021</h6>
+            </div>
+
+            <div class="row mb-3">
+              <h6>
+                <a
+                  href="https://www.metaculus.com/notebooks/8289/lifespan-extension-in-dogs-and-longevity-research-signals/"
+                >
+                  Lifespan Extension in Dogs and Longevity Research Signals
+                </a>
+              </h6>
+              <h6 class="text-muted fw-normal">Metaculus Journal, 2021</h6>
+            </div>
+
+            <div class="row mb-3">
+              <h6>
+                <a
+                  href="http://coopersquarereview.org/post/the-neverending-interview/"
+                >
+                  The Neverending Interview
+                </a>
+              </h6>
+              <h6 class="text-muted fw-normal">
+                The Cooper Square Review, 2019
+              </h6>
+            </div>
+          </section>
+
+          <section id="etc">
+            <h2>Et cetera</h2>
+
+            <hr />
+
+            <h5>Certifications:</h5>
+
+            <h6>
+              Initial Physiological Training Course
+              <span class="text-muted fw-normal">
+                &ndash; NASA (2024-11-07 @ Neutral Buoyancy Laboratory, Houston,
+                TX)
+              </span>
+            </h6>
+
+            <h6>
+              Open Water Diver
+              <span class="text-muted fw-normal">&ndash; PADI (2024)</span>
+            </h6>
+
+            <h6>
+              Amateur Radio License, General Class
+              <span class="text-muted fw-normal">&ndash; FCC (2024)</span>
+            </h6>
+
+            <hr />
+
+            <div class="row mb-4">
+              <div class="col-sm-3">
+                <a href="https://www.lastexam.ai">
+                  <img class="img-fluid img-thumbnail" src="/img/hle.png" />
+                </a>
+              </div>
+              <div class="col-sm-9">
+                <p>
+                  I wrote questions for the AI benchmark
+                  <a href="https://www.lastexam.ai">Humanity's Last Exam</a>,
+                  three of which are included in the public dataset (two on
+                  genetics and one on mathematics).
+                </p>
+              </div>
+            </div>
+
+            <hr />
+
+            <div class="row mb-4">
+              <div class="col-sm-3">
+                <a href="https://vimeo.com/442865776">
+                  <img
+                    src="/img/sequence.jpeg"
+                    class="img-fluid img-thumbnail"
+                    alt="still from Sequence"
+                  />
+                </a>
+              </div>
+              <div class="col-sm-9">
+                <h5><a href="https://vimeo.com/442865776">SEQUENCE</a></h5>
+                <p>
+                  I collaborated with Jin Angdoo on a short experimental film
+                  about proteins. It was
+                  <a
+                    href="https://www.labocine.com/spotlights/whats-emerged-from-the-symbiosis-competition-at-the-12th-annual-imagine-science-film-festival"
+                  >
+                    runner-up for the Symbiosis Award
+                  </a>
+                  at the
+                  <a href="http://imaginesciencefilms.org/">
+                    Imagine Science Film Festival
+                  </a>
+                  2019.
+                </p>
+              </div>
+            </div>
+
+            <hr />
+
+            <div class="row mb-4">
+              <div class="col-sm-3">
+                <a href="https://covid19sci.org">
+                  <img class="img-fluid img-thumbnail" src="/img/logos.png" />
+                </a>
+              </div>
+              <div class="col-sm-9">
+                <p>
+                  I was the Website Manager for the
+                  <a href="https://covid19sci.org">
+                    COVID-19 National Scientist Volunteer Database</a
+                  >. I also designed the logos for that organization and
+                  <a href="https://endcoronavirus.org">EndCoronavirus.org</a>.
+                </p>
+              </div>
+            </div>
+
+            <hr />
+
+            <div class="row mb-4">
+              <div class="col-sm-3">
+                <a href="https://pbnify.com">
+                  <img class="img-fluid img-thumbnail" src="/img/PBNify.png" />
+                </a>
+              </div>
+              <div class="col-sm-9">
+                <h5><a href="https://pbnify.com">PBNify</a></h5>
+                <p>
+                  I created a web app to convert any image into a printable
+                  paint by number outline. I sold the site to Paintable
+                  Pictures.
+                </p>
+              </div>
+            </div>
+
+            <hr />
+
+            <div class="row mb-4">
+              <div class="col-sm-3">
+                <a href="/graphics">
+                  <img
+                    class="img-fluid img-thumbnail"
+                    src="/img/graphics.png"
+                  />
+                </a>
+              </div>
+              <div class="col-sm-9">
+                <h5><a href="/graphics">Graphics</a></h5>
+                <p>I create generative art in Python.</p>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
